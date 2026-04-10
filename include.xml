@@ -216,4 +216,11 @@
 		</config:cpp>
 	</section>
 
+	<section if="mac || ios || tvos">
+    <config:cpp>
+        <compilerflag value="-DByte=unsigned char" />
+        <compilerflag value="-DBytef=unsigned char" />
+    </config:cpp>
+</section>
+
 </extension>
