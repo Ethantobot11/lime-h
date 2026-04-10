@@ -89,8 +89,8 @@ jobs:
  
       - name: Rebuild Lime
         run: |
-          haxelib run lime rebuild macos -release -64 -nocolor -verbose -nocffi
-          haxelib run lime rebuild macos -release -nocolor -verbose -nocffi
+          haxelib run lime rebuild macos -release -64 -nocolor -verbose -nocffi -clean
+          haxelib run lime rebuild macos -release -nocolor -verbose -nocffi -clean
 
       - name: Upload Artifact (x86_64)
         uses: actions/upload-artifact@v4
@@ -235,7 +235,7 @@ jobs:
  
       - name: Rebuild Lime
         run: |
-          haxelib run lime rebuild ios -release -nocolor -nocffi
+          haxelib run lime rebuild ios -release -nocolor -nocffi -clean
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
