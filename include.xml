@@ -210,4 +210,10 @@
 
 	</section>
 
+	<section if="mac || ios || tvos">
+		<config:cpp>
+			<compilerflag value="-DFT_CONFIG_OPTION_SYSTEM_ZLIB" />
+		</config:cpp>
+	</section>
+
 </extension>
