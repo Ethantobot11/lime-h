@@ -78,7 +78,7 @@ jobs:
 
       - name: Install Haxe dependencies
         run: |
-          haxelib git hxcpp https://github.com/MaysLastPlays-Stuff/hxcpp-h --quiet
+          haxelib git hxcpp https://github.com/Ethantobot11/hxcpp-h --quiet
           haxelib install format --quiet
           haxelib git hxp https://github.com/openfl/hxp --quiet
       - name: Enable HXCPP compile cache
@@ -223,7 +223,7 @@ jobs:
  
       - name: Install Haxe dependencies
         run: |
-          haxelib git hxcpp https://github.com/MaysLastPlays-Stuff/hxcpp-h --quiet
+          haxelib git hxcpp https://github.com/Ethantobot11/hxcpp-h --quiet
           haxelib install format --quiet
           haxelib git hxp https://github.com/openfl/hxp --quiet
 
